@@ -11,8 +11,10 @@ const fadeInLeft = {
     visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } }
 }
 
-const projectsButtonStyle = "text-black bg-white focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-lg px-5 py-4 text-center me-2 mb-2 hover:scale-105 transition-transform duration-300";
-const cvButtonStyle = "text-black bg-[#FFD700] focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-lg px-5 py-2.5 text-center me-2 mb-2 hover:scale-105 transition-transform duration-300";
+const projectsButtonStyle = `text-black bg-white focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-lg px-5 py-4 text-center me-2 mb-2 hover:scale-105 hover:bg-gray-100 hover:shadow-lg transition-all duration-300 ease-in-out`;
+
+const cvButtonStyle = `text-black bg-[#FFD700] focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-lg px-5 py-2.5 text-center me-2 mb-2 hover:scale-105 hover:bg-yellow-400 hover:shadow-lg transition-all duration-300 ease-in-out`;
+
 const Span = "text-[#9CA3AF]";
 
 function HeroContent() {
@@ -44,7 +46,9 @@ function HeroContent() {
                         <a href="#Projects">Explore Projects</a>
                     </button>
                     <button className={cvButtonStyle}>
-                        <a href="#">Download CV</a>
+                        <a href="/cv.pdf" download="Aljaž_Strnad_CV">
+                            Download CV
+                        </a>
                     </button>
                 </div>
             </motion.div>
