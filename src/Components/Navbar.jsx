@@ -55,6 +55,7 @@ function HamburgerMenu({ isOpen, setOpen }) {
                     {[
                         { label: 'Home', href: '#' },
                         { label: 'Education', href: '#' },
+                        { label: 'Skills', href: '#' },
                         { label: 'Projects', href: '#Projects' },
                         { label: 'Contact', href: '#' }
                     ].map((item) => (
@@ -89,6 +90,7 @@ export default function Navbar() {
                     <div className='hidden md:flex items-center justify-center h-full space-x-4 md:space-x-8 lg:space-x-16 xl:space-x-20'>
                         <li><a className={aStyle} href="#"><span className={spanStyle}>Home</span></a></li>
                         <li><a className={aStyle} href="#"><span className={spanStyle}>Education</span></a></li>
+                        <li><a className={aStyle} href="#"><span className={spanStyle}>Skills</span></a></li>
                         <li><a className={aStyle} href="#"><span className={spanStyle}>Projects</span></a></li>
                         <li><a className={aStyle} href="#"><span className={spanStyle}>Contact</span></a></li>
                     </div>
