@@ -18,7 +18,7 @@ export default function Projects() {
                             <img src={project.image} alt="project-image" className="w-full h-40 object-cover rounded-t-lg" />
                             <h1 className="text-xl font-semibold mt-3">{project.title}</h1>
                             <p className="text-gray-600 text-sm mt-2">{project.description}</p>
-                            <button className="btn btn-outline border-[#FFD700] text-[#FFD700] hover:bg-[#FFD700] hover:text-black">
+                            <button className="btn btn-outline">
                                 <a href={project.link} target="_blank" rel="noopener noreferrer">View on Github</a>
                             </button>
                         </div>
