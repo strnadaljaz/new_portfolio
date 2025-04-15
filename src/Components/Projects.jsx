@@ -38,15 +38,32 @@ export default function Projects() {
                         <div className="p-5 flex flex-col flex-grow">
                             <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
                             <p className="text-gray-700 mb-4 flex-grow">{project.description}</p>
-                            <button className="btn btn-outline">
-                                <a
-                                    href={project.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    View on GitHub
-                                </a>
-                            </button>
+                            
+                            <a
+                                href={project.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="relative overflow-hidden bg-[#2C2F36] text-white font-medium rounded-lg text-base px-6 py-2.5 text-center group transition-all duration-300 flex items-center justify-center mt-2 border border-transparent hover:border-white/20"
+                            >
+                                <span className="relative z-10 flex items-center justify-center">
+                                    <span>View on GitHub</span>
+                                    <svg 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        className="h-5 w-5 ml-2 transform transition-all duration-300 group-hover:translate-x-1" 
+                                        fill="none" 
+                                        viewBox="0 0 24 24" 
+                                        stroke="currentColor"
+                                    >
+                                        <path 
+                                            strokeLinecap="round" 
+                                            strokeLinejoin="round" 
+                                            strokeWidth={2} 
+                                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" 
+                                        />
+                                    </svg>
+                                </span>
+                                <span className="absolute inset-0 bg-gradient-to-r from-[#2C2F36] to-[#3D4047] opacity-0 group-hover:opacity-100 transition-all duration-300"></span>
+                            </a>
                         </div>
                     </div>
                 ))}
