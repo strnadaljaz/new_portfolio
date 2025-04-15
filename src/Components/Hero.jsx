@@ -59,22 +59,22 @@ function TypewriterText({ text, className }) {
     );
 }
 
-const projectsButtonStyle = `text-black bg-white focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-lg px-5 py-4 text-center me-2 mb-2 hover:scale-105 hover:bg-gray-100 hover:shadow-lg transition-all duration-300 ease-in-out`;
+const projectsButtonStyle = `relative overflow-hidden text-white bg-transparent border-2 border-white hover:border-[#FFD700] font-medium rounded-full text-lg px-8 py-3 text-center group transition-all duration-300 hover:bg-[#FFD700]/10 hover:text-[#FFD700] shadow-lg hover:shadow-[#FFD700]/20`;
 
-const cvButtonStyle = `text-black bg-[#FFD700] focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-lg px-5 py-2.5 text-center me-2 mb-2 hover:scale-105 hover:bg-yellow-400 hover:shadow-lg transition-all duration-300 ease-in-out`;
+const cvButtonStyle = `relative overflow-hidden text-black bg-gradient-to-r from-[#FFD700] to-yellow-400 font-medium rounded-full text-lg px-8 py-3 text-center group transition-all duration-300 shadow-lg hover:shadow-[0_0_20px_rgba(255,215,0,0.6)] transform hover:-translate-y-1`;
 
 const Span = "text-[#9CA3AF]";
 
 function HeroContent() {
     return (
-        <div className="flex flex-col justify-center items-center h-full md:flex-row space-y-8 md:space-y-0 md:space-x-8">
+        <div className="flex flex-col justify-center items-center h-full pt-[50px] pb-[70px] md:py-0 md:flex-row space-y-8 md:space-y-0 md:space-x-8">
             <motion.div
                 initial="hidden"
                 animate="visible"
                 variants={fadeInLeft}
                 className="flex justify-center items-center w-full md:w-1/2"
             >
-                <img src="/profile.jpg" alt="Profile picture" className="w-[45vh] h-[45vh] rounded-full object-cover shadow-xl transform transition-transform duration-500 hover:scale-105" />
+                <img src="/profile.jpg" alt="Profile picture" className="w-[35vh] h-[35vh] md:w-[40vh] md:h-[40vh] lg:w-[45vh] lg:h-[45vh] rounded-full object-cover shadow-xl transform transition-transform duration-500 hover:scale-105" />
             </motion.div>
             <motion.div
                 initial="hidden"
@@ -82,22 +82,30 @@ function HeroContent() {
                 variants={fadeInUp}
                 className="w-full md:w-1/2 flex flex-col justify-center items-center text-center md:text-left"
             >
-                <h1 className="text-white font-extrabold text-4xl sm:text-5xl lg:text-6xl m-7">
+                <h1 className="text-white font-extrabold text-3xl sm:text-4xl lg:text-6xl m-4 sm:m-7">
                     Frontend <TypewriterText text="Developer" className="text-[#FFD700]" />
                 </h1>
-                <p className="text-white font-[poppins] text-xl sm:text-3xl m-7">
+                <p className="text-white font-[poppins] text-lg sm:text-xl md:text-2xl lg:text-3xl m-4 sm:m-7">
                     Passionate about crafting <span className={Span}>modern</span>, responsive, and <span className={Span}>user-friendly</span> web experiences.
                     I specialize in <span className={Span}>frontend development</span> and love bringing creative ideas to life
                     through <span className={Span}>clean design</span> and <span className={Span}>smooth animations</span>.
                     <span className="text-[#FFD700]"> Let's build something amazing together!</span>
                 </p>
-                <div className="flex justify-center md:justify-start space-x-4">
-                    <button className={projectsButtonStyle}>
-                        <a href="#Projects">Explore Projects</a>
+                <div className="flex flex-col sm:flex-row justify-center items-center w-full sm:w-auto mx-auto md:mx-0 space-y-4 sm:space-y-0 sm:space-x-6 px-4 sm:px-0 mt-4">
+                    <button className={`${projectsButtonStyle} min-w-[180px] sm:min-w-[200px]`}>
+                        <a href="#Projects" className="relative z-10 flex items-center justify-center">
+                            <span>Explore Projects</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 transform transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </a>
                     </button>
-                    <button className={cvButtonStyle}>
-                        <a href="/cv.pdf" download="Aljaž_Strnad_CV">
-                            Download CV
+                    <button className={`${cvButtonStyle} min-w-[180px] sm:min-w-[200px]`}>
+                        <a href="/cv.pdf" download="Aljaž_Strnad_CV" className="relative z-10 flex items-center justify-center">
+                            <span>Download CV</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 transform transition-transform group-hover:translate-y-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                            </svg>
                         </a>
                     </button>
                 </div>
@@ -108,7 +116,7 @@ function HeroContent() {
 
 export default function Hero() {
     return (
-        <div id="Home" className="relative bg-[#2C2F36] h-[calc(100vh-6rem)] flex items-center">
+        <div id="Home" className="relative bg-[#2C2F36] min-h-[calc(100vh-6rem)] flex items-center">
             <HeroContent />
         </div>
     );

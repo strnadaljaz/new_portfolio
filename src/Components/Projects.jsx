@@ -9,8 +9,8 @@ export default function Projects() {
     ];
 
     return (
-        <div id="Projects" className="bg-[#2C2F36] lg:h-[80vh] sm:h-auto">
-            <div className="flex justify-center items-center">
+        <div id="Projects" className="bg-[#2C2F36] lg:h-[75vh] sm:h-auto pb-12">
+            <div className="flex justify-center items-center mb-15">
                 <h1 className="mb-4 text-3xl font-extrabold text-white md:text-5xl lg:text-6xl">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#FFD700]">My Projects</span>
                 </h1>
@@ -20,25 +20,61 @@ export default function Projects() {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
                 variants={fadeInUp}
-                className="flex flex-wrap justify-center items-center gap-6 p-6"
+                className="flex flex-wrap justify-center items-center gap-8 max-w-6xl mx-auto px-4 md:px-6"
             >
                 {projects.map((project) => (
-                    <div key={project.title} className="bg-white text-black h-[50vh] w-80 rounded-lg shadow-lg p-4 text-center transition-transform transform hover:scale-105">
-                        <img src={project.image} alt="project-image" className="w-full h-40 object-cover rounded-t-lg" />
-                        <h1 className="text-xl font-semibold mt-3">{project.title}</h1>
-                        <p className="text-gray-600 text-sm mt-2">{project.description}</p>
-                        <button className="btn btn-outline">
-                            <a href={project.link} target="_blank" rel="noopener noreferrer">View on Github</a>
-                        </button>
+                    <div
+                        key={project.title}
+                        className="bg-[#BABDC4] text-black w-full sm:w-[350px] rounded-lg shadow-xl overflow-hidden flex flex-col transition-transform transform hover:scale-105"
+                    >
+                        <div className="relative h-48 overflow-hidden">
+                            <img
+                                src={project.image}
+                                alt={`${project.title} screenshot`}
+                                className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                        </div>
+                        <div className="p-5 flex flex-col flex-grow">
+                            <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
+                            <p className="text-gray-700 mb-4 flex-grow">{project.description}</p>
+                            <button className="btn btn-outline">
+                                <a
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    View on GitHub
+                                </a>
+                            </button>
+                        </div>
                     </div>
                 ))}
             </motion.div>
-            {/* Add the "See All Projects" button */}
-            <div className="flex justify-center mt-8">
-                <button className="btn btn-outline btn-warning">
-                    <a href="/projects" target="_self">See All Projects</a>
-                </button>
-            </div>
+
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.1 }}
+                variants={fadeInUp}
+                className="text-center mt-12"
+            >
+                <div className="inline-flex items-center justify-center">
+                    <div className="h-[1px] w-24 bg-gradient-to-r from-transparent to-gray-400"></div>
+                    <p className="mx-6 text-gray-200 text-lg font-light drop-shadow-md">
+                        <span className="text-shadow">Discover more on my</span>
+                        <a
+                            href="https://github.com/strnadaljaz"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="ml-2 font-medium text-[#FFD700] hover:underline transition-all duration-300 drop-shadow-[0_0_3px_rgba(255,215,0,0.4)] hover:drop-shadow-[0_0_8px_rgba(255,215,0,0.8)]"
+                        >
+                            GitHub
+                        </a>
+                    </p>
+                    <div className="h-[1px] w-24 bg-gradient-to-l from-transparent to-gray-400"></div>
+                </div>
+            </motion.div>
         </div>
     );
 }
