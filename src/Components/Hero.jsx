@@ -67,7 +67,7 @@ const Span = "text-[#9CA3AF]";
 
 function HeroContent() {
     return (
-        <div className="flex flex-col justify-center items-center h-full pt-[50px] pb-[70px] md:py-0 md:flex-row space-y-8 md:space-y-0 md:space-x-8">
+        <div id="Hero" className="flex flex-col justify-center items-center h-full pt-[50px] pb-[70px] md:py-0 md:flex-row space-y-8 md:space-y-0 md:space-x-8">
             <motion.div
                 initial="hidden"
                 animate="visible"
