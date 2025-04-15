@@ -1,16 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-
-const fadeInUp = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
-};
-
-const fadeInLeft = {
-    hidden: { opacity: 0, x: -50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } }
-};
+import { fadeInLeft, fadeInUp } from "../utils/motion";
 
 function TypewriterText({ text, className }) {
     const [displayedText, setDisplayedText] = useState('');
@@ -76,7 +67,7 @@ const Span = "text-[#9CA3AF]";
 
 function HeroContent() {
     return (
-        <div className="flex flex-col justify-center items-center h-auto md:h[80vh] md:flex-row pt-[15vh] sm:pt-[20vh] md:pt-[2rem] space-y-8 md:space-y-0 md:space-x-8">
+        <div className="flex flex-col justify-center items-center h-full md:flex-row space-y-8 md:space-y-0 md:space-x-8">
             <motion.div
                 initial="hidden"
                 animate="visible"
@@ -111,13 +102,13 @@ function HeroContent() {
                     </button>
                 </div>
             </motion.div>
-        </div >
+        </div>
     );
 }
 
 export default function Hero() {
     return (
-        <div id="Home" className="relative bg-[#2C2F36] h-auto min-h-[80vh] flex items-center">
+        <div id="Home" className="relative bg-[#2C2F36] h-[calc(100vh-6rem)] flex items-center">
             <HeroContent />
         </div>
     );
