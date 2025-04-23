@@ -4,6 +4,7 @@ import Projects from "../Components/Projects";
 import Skills from "../Components/Skills";
 import Education from "../Components/Education";
 import Contact from "../Components/Contact";
+import Footer from "../Components/Footer";
 
 export default function Page() {
   return (
@@ -14,6 +15,7 @@ export default function Page() {
       <Skills />
       <Education />
       <Contact />
+      <Footer />
     </div>
   );
 }
