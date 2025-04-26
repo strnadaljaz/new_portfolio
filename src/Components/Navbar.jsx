@@ -36,7 +36,7 @@ function HamburgerMenu({ isOpen, setOpen }) {
     }, [isOpen, setOpen]);
 
     return (
-        <div className='flex md:hidden items-center justify-end w-full h-full relative' ref={menuRef}>
+        <div id="Navbar" className='flex md:hidden items-center justify-end w-full h-full relative' ref={menuRef}>
             <Hamburger
                 toggled={isOpen}
                 toggle={setOpen}

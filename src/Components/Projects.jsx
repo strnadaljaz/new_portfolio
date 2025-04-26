@@ -25,7 +25,7 @@ export default function Projects() {
                 {projects.map((project) => (
                     <div
                         key={project.title}
-                        className="bg-[#BABDC4] text-black w-full sm:w-[350px] rounded-lg shadow-xl overflow-hidden flex flex-col transition-transform transform hover:scale-105"
+                        className="bg-[#BABDC4] text-black w-full sm:w-[350px] rounded-lg shadow-xl overflow-hidden flex flex-col transition-transform transform hover:scale-105 hover:shadow-2xl"
                     >
                         <div className="relative h-48 overflow-hidden">
                             <img

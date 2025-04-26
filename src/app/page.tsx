@@ -11,7 +11,7 @@ export default function Page() {
     <div>
       <Navbar />
       <Hero />
-      {<Projects />}
+      <Projects />
       <Skills />
       <Education />
       <Contact />

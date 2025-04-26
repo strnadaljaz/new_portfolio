@@ -75,6 +75,7 @@ export default function Footer() {
                     variants={fadeInUp}
                     className="mt-8 pt-6 border-t border-gray-800 text-center"
                 >
+                    <div className="h-[2px] bg-gradient-to-r from-transparent via-[#FFD700] to-transparent mb-6"></div>
                     <p className="text-gray-500 text-sm">
                         © {currentYear} Aljaž Strnad. All rights reserved.
                     </p>
