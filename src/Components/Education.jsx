@@ -15,7 +15,7 @@ export default function Education () {
             degree: "Computer Engineering",
             institution: "Faculty of Electrical Engineering, Computer Science and Informatics",
             duration: "Starting 2025",
-            description: "Currently pursuing a degree in Computer Engineering with specialization in software development. Expanding knowledge in advanced programming concepts, database management, and modern web frameworks including React and Next.js.",
+            description: "",
             logo: "/icons/feri.png",
         },
     ];
