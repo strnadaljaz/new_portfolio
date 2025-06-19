@@ -15,6 +15,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Aljaž Strnad",
   description: "Aljaž Strnad's personal website",
+  keywords: [
+    "Aljaž Strnad",
+    "Portfolio",
+    "Web Developer",
+    "Software Engineer",
+  ],
 };
 
 export default function RootLayout({
