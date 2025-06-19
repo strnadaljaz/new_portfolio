@@ -9,14 +9,14 @@ export default function Education () {
             institution: "Secondary Electrical and Computer School Maribor",
             duration: "2021 - 2025",
             description: "Specialized in computer science with focus on programming, web development, and network administration. Gained strong foundations in HTML/CSS, JavaScript, and C++. Completed graduation thesis project 'TaskFall' - an online task management application.",
-            logo: "/icons/sers.png", // Add your university logo to the icons folder
+            logo: "/icons/sers.webp", 
         },
         {
             degree: "Computer Engineering",
             institution: "Faculty of Electrical Engineering, Computer Science and Informatics",
             duration: "Starting 2025",
             description: "",
-            logo: "/icons/feri.png",
+            logo: "/icons/feri.webp",
         },
     ];
 
