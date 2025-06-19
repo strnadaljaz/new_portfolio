@@ -74,7 +74,7 @@ function HeroContent() {
                 variants={fadeInLeft}
                 className="flex justify-center items-center w-full md:w-1/2"
             >
-                <img src="/profile.jpg" alt="Profile picture" className="w-[35vh] h-[35vh] md:w-[40vh] md:h-[40vh] lg:w-[45vh] lg:h-[45vh] rounded-full object-cover shadow-xl transform transition-transform duration-500 hover:scale-105" />
+                <img src="/profile.webp" alt="Profile picture" className="w-[35vh] h-[35vh] md:w-[40vh] md:h-[40vh] lg:w-[45vh] lg:h-[45vh] rounded-full object-cover shadow-xl transform transition-transform duration-500 hover:scale-105" />
             </motion.div>
             <motion.div
                 initial="hidden"

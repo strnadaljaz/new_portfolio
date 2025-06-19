@@ -4,8 +4,8 @@ import { fadeInUp, fadeInLeft } from "../utils/motion";
 
 export default function Projects() {
     const projects = [
-        { title: "TaskFall", image: "taskfall.png", description: "TaskFall is an online to-do app, made for my graduation thesis", link: "https://github.com/strnadaljaz/TaskFall" },
-        { title: "Raylib Dino Dash", image: "dino.png", description: "A 2D game writen in C++ with raylib graphics", link: "https://github.com/strnadaljaz/RaylibDinoDash" },
+        { title: "TaskFall", image: "taskfall.webp", description: "TaskFall is an online to-do app, made for my graduation thesis", link: "https://github.com/strnadaljaz/TaskFall" },
+        { title: "Raylib Dino Dash", image: "dino.webp", description: "A 2D game writen in C++ with raylib graphics", link: "https://github.com/strnadaljaz/RaylibDinoDash" },
     ];
 
     return (
