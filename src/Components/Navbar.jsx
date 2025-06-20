@@ -38,6 +38,7 @@ function HamburgerMenu({ isOpen, setOpen }) {
     return (
         <div id="Navbar" className='flex md:hidden items-center justify-end w-full h-full relative' ref={menuRef}>
             <Hamburger
+                id="hamburger menu"
                 toggled={isOpen}
                 toggle={setOpen}
                 color='white'
