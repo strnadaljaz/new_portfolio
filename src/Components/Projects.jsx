@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { fadeInUp, fadeInLeft } from "../utils/motion";
 
 export default function Projects() {
+    // Project data
     const projects = [
         { title: "TaskFall", image: "taskfall.webp", description: "TaskFall is an online to-do app, made for my graduation thesis", link: "https://github.com/strnadaljaz/TaskFall" },
         { title: "Raylib Dino Dash", image: "dino.webp", description: "A 2D game writen in C++ with raylib graphics", link: "https://github.com/strnadaljaz/RaylibDinoDash" },
