@@ -6,6 +6,7 @@ export default function Projects() {
     const projects = [
         { title: "TaskFall", image: "taskfall.webp", description: "TaskFall is an online to-do app, made for my graduation thesis", link: "https://github.com/strnadaljaz/TaskFall" },
         { title: "Raylib Dino Dash", image: "dino.webp", description: "A 2D game writen in C++ with raylib graphics", link: "https://github.com/strnadaljaz/RaylibDinoDash" },
+        { title: "Sokoban Standalone", image: "sokoban.webp", description: "A 2D game writen in C++ with raylib graphics, featuring a classic puzzle gameplay", link: "https://github.com/strnadaljaz/SokobanStandalone" },
     ];
 
     return (
