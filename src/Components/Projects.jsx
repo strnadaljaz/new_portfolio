@@ -11,7 +11,7 @@ export default function Projects() {
     ];
 
     return (
-        <div id="Projects" className="bg-[#2C2F36] lg:h-[75vh] sm:h-auto pb-12">
+        <div id="Projects" className="bg-[#2C2F36] lg:h-auto sm:h-auto pb-12">
             <div className="flex justify-center items-center mb-15">
                 <h1 className="mb-4 text-3xl font-extrabold text-white md:text-5xl lg:text-6xl">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#FFD700]">My Projects</span>
