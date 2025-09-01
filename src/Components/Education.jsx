@@ -14,7 +14,7 @@ export default function Education () {
         {
             degree: "Computer Engineering",
             institution: "Faculty of Electrical Engineering, Computer Science and Informatics",
-            duration: "Starting 2025",
+            duration: "2025 - Present",
             description: "",
             logo: "/icons/feri.webp",
         },

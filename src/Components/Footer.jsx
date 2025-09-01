@@ -7,7 +7,7 @@ export default function Footer() {
 
     const socialLinks = [
         { icon: "github", url: "https://github.com/strnadaljaz", label: "GitHub" },
-        { icon: "linkedin", url: "https://www.linkedin.com/in/alja%C5%BE-strnad-678489295/?originalSubdomain=si", label: "LinkedIn" },
+        { icon: "linkedin", url: "https://www.linkedin.com/in/aljaz-strnad", label: "LinkedIn" },
         // Add any other social media platforms you use
     ];
 
