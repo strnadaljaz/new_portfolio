@@ -83,7 +83,7 @@ function HeroContent() {
                 className="w-full md:w-1/2 flex flex-col justify-center items-center text-center md:text-left"
             >
                 <h1 className="text-white font-extrabold text-3xl sm:text-4xl lg:text-6xl m-4 sm:m-7">
-                    Web <TypewriterText text="Developer" className="text-[#FFD700]" />
+                    Software <TypewriterText text="Engineer" className="text-[#FFD700]" />
                 </h1>
                 <p className="text-white font-[poppins] text-lg sm:text-xl md:text-2xl lg:text-3xl m-4 sm:m-7">
                     Passionate about crafting <span className={Span}>modern</span>, responsive, and <span className={Span}>user-friendly</span> web experiences.
