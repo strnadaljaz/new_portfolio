@@ -86,10 +86,10 @@ function HeroContent() {
                     Software <TypewriterText text="Engineer" className="text-[#FFD700]" />
                 </h1>
                 <p className="text-white font-[poppins] text-lg sm:text-xl md:text-2xl lg:text-3xl m-4 sm:m-7">
-                    Passionate about crafting <span className={Span}>modern</span>, responsive, and <span className={Span}>user-friendly</span> web experiences.
-                    I specialize in <span className={Span}>frontend development</span> and love bringing creative ideas to life
-                    through <span className={Span}>clean design</span> and <span className={Span}>smooth animations</span>.
-                    <span className="text-[#FFD700]"> Let's build something amazing together!</span>
+                    Dedicated to building <span className={Span}>modern</span>, efficient, and <span className={Span}>user-friendly</span> software solutions.<br/>
+                    Experienced in <span className={Span}>full-stack development</span>, I enjoy solving complex problems and turning ideas into reality<br/>
+                    with <span className={Span}>clean code</span>, <span className={Span}>scalable architecture</span>, and <span className={Span}>intuitive design</span>.<br/>
+                    <span className="text-[#FFD700]"> Let's create impactful software together!</span>
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center items-center w-full sm:w-auto mx-auto md:mx-0 space-y-4 sm:space-y-0 sm:space-x-6 px-4 sm:px-0 mt-4">
                     <button className={`${projectsButtonStyle} min-w-[180px] sm:min-w-[200px]`}>
