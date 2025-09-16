@@ -5,7 +5,8 @@ import { fadeInUp, fadeInLeft } from "../utils/motion";
 export default function Projects() {
     // Project data
     const projects = [
-        { title: "TaskFall", image: "taskfall.webp", description: "TaskFall is an online to-do app, made for my graduation thesis", link: "https://github.com/strnadaljaz/TaskFall" },
+        { title: "Spotimanager", image: "spotimanager.webp", description: "Spotimanager is an online full stack app for managing your Spotify playlists. Frontend made in Next.js with TypeScript, backend runs on Node.js", link: "https://github.com/strnadaljaz/spotify-playlist-manager" },
+        { title: "TaskFall", image: "taskfall.webp", description: "TaskFall is an online to-do app, made for my graduation thesis, made in php", link: "https://github.com/strnadaljaz/TaskFall" },
         { title: "Raylib Dino Dash", image: "dino.webp", description: "A 2D game writen in C++ with raylib graphics", link: "https://github.com/strnadaljaz/RaylibDinoDash" },
         { title: "Sokoban Standalone", image: "sokoban.webp", description: "A 2D game writen in C++ with raylib graphics, featuring a classic puzzle gameplay", link: "https://github.com/strnadaljaz/SokobanStandalone" },
     ];
