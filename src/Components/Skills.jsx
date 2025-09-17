@@ -19,6 +19,7 @@ export default function Skills() {
             category: "Backend",
             technologies: [
                 { name: "Node.js", icon: "/icons/nodejs.svg" },
+                { name: "PHP", icon: "/icons/php.webp" },
                 { name: "MySQL", icon: "/icons/mysql.svg" },
                 { name: "Firebase", icon: "/icons/firebase.svg" },
             ]
