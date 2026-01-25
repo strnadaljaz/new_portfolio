@@ -4,13 +4,7 @@ import { fadeInUp } from "../utils/motion";
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
-
-    const socialLinks = [
-        { icon: "github", url: "https://github.com/strnadaljaz", label: "GitHub" },
-        { icon: "linkedin", url: "https://www.linkedin.com/in/aljaz-strnad", label: "LinkedIn" },
-        // Add any other social media platforms you use
-    ];
-
+ 
     return (
         <footer className="bg-[#262930] py-8 border-t border-gray-800">
             <div className="max-w-6xl mx-auto px-4">
@@ -32,6 +26,7 @@ export default function Footer() {
                         <h3 className="text-lg font-semibold text-white mb-3">Quick Links</h3>
                         <ul className="space-y-2">
                             <li><a href="#Hero" className="text-gray-400 hover:text-[#FFD700] transition-colors">Home</a></li>
+                            <li><a href="/webpages" className="text-gray-400 hover:text-[#FFD700] transition-colors">Webpages</a></li> 
                             <li><a href="#Education" className="text-gray-400 hover:text-[#FFD700] transition-colors">Education</a></li>
                             <li><a href="#Skills" className="text-gray-400 hover:text-[#FFD700] transition-colors">Skills</a></li>
                             <li><a href="#Projects" className="text-gray-400 hover:text-[#FFD700] transition-colors">Projects</a></li>
@@ -55,6 +50,10 @@ export default function Footer() {
                             </a>
                         </div>
                         <p className="text-gray-400 mt-4">
+                            <a href="mailto:aljaz.strnad@student.um.si" className="hover:text-[#ffd700] transition-colors">aljaz.strnad@student.um.si</a>
+
+                        </p>
+                        <p className="text-gray-400 mt-1">
                             <a href="mailto:strnadaljaz23@gmail.com" className="hover:text-[#FFD700] transition-colors">
                                 strnadaljaz23@gmail.com
                             </a>

@@ -88,8 +88,8 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h3 className="text-white font-medium text-lg">Email</h3>
-                                        <a href="mailto:strnadaljaz23@gmail.com" className="text-gray-300 hover:text-[#FFD700] transition-colors">
-                                            strnadaljaz23@gmail.com
+                                        <a href="mailto:aljaz.strnad@student.um.si" className="text-gray-300 hover:text-[#FFD700] transition-colors">
+                                            aljaz.strnad@student.um.si 
                                         </a>
                                     </div>
                                 </div>
@@ -188,7 +188,7 @@ export default function Contact() {
                                         )}
                                         <button
                                             type="submit"
-                                            className="relative overflow-hidden text-black bg-gradient-to-r from-[#FFD700] to-yellow-400 font-medium rounded-full text-lg px-8 py-3 text-center group transition-all duration-300 shadow-lg hover:shadow-[0_0_20px_rgba(255,215,0,0.6)] transform hover:-translate-y-1 w-full flex items-center justify-center"
+                                            className="relative overflow-hidden text-black bg-gradient-to-r from-[#FFD700] to-yellow-400 font-medium rounded-full text-lg px-8 py-3 text-center group transition-all duration-300 shadow-lg hover:shadow-[0_0_20px_rgba(255,215,0,0.6)] transform hover:-translate-y-1 w-full flex items-center justify-center cursor-pointer"
                                             disabled={isSubmitting}
                                         >
                                             {isSubmitting ? (

@@ -93,6 +93,12 @@ function HeroContent() {
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center items-center w-full sm:w-auto mx-auto md:mx-0 space-y-4 sm:space-y-0 sm:space-x-6 px-4 sm:px-0 mt-4">
                     <button className={`${projectsButtonStyle} min-w-[180px] sm:min-w-[200px]`}>
+                        <a href="/webpages" className="relative z-10 flex items-center justify-center">
+                            <span>Need a webpage?</span> 
+                        </a>
+                    </button>
+ 
+                    <button className={`${projectsButtonStyle} min-w-[180px] sm:min-w-[200px]`}>
                         <a href="#Projects" className="relative z-10 flex items-center justify-center">
                             <span>Explore Projects</span>
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 transform transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
