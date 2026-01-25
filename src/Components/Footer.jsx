@@ -25,7 +25,7 @@ export default function Footer() {
                     <div className="text-center">
                         <h3 className="text-lg font-semibold text-white mb-3">Quick Links</h3>
                         <ul className="space-y-2">
-                            <li><a href="#Hero" className="text-gray-400 hover:text-[#FFD700] transition-colors">Home</a></li>
+                            <li><a href="/" className="text-gray-400 hover:text-[#FFD700] transition-colors">Home</a></li>
                             <li><a href="/webpages" className="text-gray-400 hover:text-[#FFD700] transition-colors">Webpages</a></li> 
                             <li><a href="#Education" className="text-gray-400 hover:text-[#FFD700] transition-colors">Education</a></li>
                             <li><a href="#Skills" className="text-gray-400 hover:text-[#FFD700] transition-colors">Skills</a></li>

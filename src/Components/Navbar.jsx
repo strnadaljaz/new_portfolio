@@ -54,7 +54,7 @@ function HamburgerMenu({ isOpen, setOpen }) {
                     className='w-64 bg-[#2C2F36] p-4 rounded-lg shadow-lg flex flex-col space-y-4 z-50 mt-2'
                 >
                     {[
-                        { label: 'Home', href: '#Hero' },
+                        { label: 'Home', href: '/' },
                         { label: 'Webpages', href: '/webpages' },
                         { label: 'Projects', href: '#Projects' },
                         { label: 'Skills', href: '#Skills' },
@@ -90,7 +90,7 @@ export default function Navbar() {
                 <ul className="flex items-center justify-end h-full space-x-4 md:space-x-8 lg:space-x-16 xl:space-x-20">
                     {/* Desktop Menu */}
                     <div className='hidden md:flex items-center justify-center h-full space-x-4 md:space-x-8 lg:space-x-16 xl:space-x-20'>
-                        <li><a className={aStyle} href="#Hero"><span className={spanStyle}>Home</span></a></li>
+                        <li><a className={aStyle} href="/"><span className={spanStyle}>Home</span></a></li>
                         <li><a className={aStyle} href="/webpages"><span className={spanStyle}>Webpages</span></a></li>
                         <li><a className={aStyle} href="#Projects"><span className={spanStyle}>Projects</span></a></li>
                         <li><a className={aStyle} href="#Skills"><span className={spanStyle}>Skills</span></a></li>
