@@ -5,7 +5,6 @@ import { fadeInLeft, fadeInUp } from "../utils/motion";
 
 function TypewriterText({ text, className }) {
     const [displayedText, setDisplayedText] = useState('');
-    const [index, setIndex] = useState(0);
     const [showCursor, setShowCursor] = useState(true);
     const [isDeleting, setIsDeleting] = useState(false);
     const [typingSpeed, setTypingSpeed] = useState(150);

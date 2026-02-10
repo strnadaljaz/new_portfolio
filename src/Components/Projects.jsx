@@ -5,6 +5,7 @@ import { fadeInUp, fadeInLeft } from "../utils/motion";
 export default function Projects() {
     // Project data
     const projects = [
+        { title: "Kokovit webpage", image: "kokovit.webp", description: "Built a webpage for a local business Kokovit.", link: "https://www.kokovit.si" },
         { title: "Spotimanager", image: "spotimanager.webp", description: "Spotimanager is an online full stack app for managing your Spotify playlists. Frontend made in Next.js with TypeScript, backend runs on Node.js", link: "https://github.com/strnadaljaz/spotify-playlist-manager" },
         { title: "TaskFall", image: "taskfall.webp", description: "TaskFall is an online to-do app, made for my graduation thesis, made in php", link: "https://github.com/strnadaljaz/TaskFall" },
         { title: "Raylib Dino Dash", image: "dino.webp", description: "A 2D game writen in C++ with raylib graphics", link: "https://github.com/strnadaljaz/RaylibDinoDash" },
@@ -49,7 +50,7 @@ export default function Projects() {
                                 className="relative overflow-hidden bg-[#2C2F36] text-white font-medium rounded-lg text-base px-6 py-2.5 text-center group transition-all duration-300 flex items-center justify-center mt-2 border border-transparent hover:border-white/20"
                             >
                                 <span className="relative z-10 flex items-center justify-center">
-                                    <span>View on GitHub</span>
+                                    <span>View</span>
                                     <svg 
                                         xmlns="http://www.w3.org/2000/svg" 
                                         className="h-5 w-5 ml-2 transform transition-all duration-300 group-hover:translate-x-1" 

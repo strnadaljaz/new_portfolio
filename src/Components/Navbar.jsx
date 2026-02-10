@@ -2,86 +2,18 @@
 import { useState } from 'react';
 import Hamburger from 'hamburger-react';
 import { useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 // Style consts
-const aStyle = "font-popins font-medium text-lg group text-[#C9CCCA] transition-all duration-300 ease-in-out hover:text-white";
-const spanStyle = "bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-250 ease-out";
-const hamburgerAStyle = "font-sans font-medium text-[#FFD700] block px-4 py-3";
+const aStyle = "font-popins font-medium text-lg group text-[#C9CCCA] transition-all duration-300 ease-in-out hover:text-[#ffffff]";
+const aPhoneStyle = "text-[#2C2F36] text-2xl";
 
-function HamburgerMenu({ isOpen, setOpen }) {
-    const menuRef = useRef(null);
-
-    useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (menuRef.current && !menuRef.current.contains(event.target)) {
-                setOpen(false);
-            }
-        };
-
-        const handleEscape = (event) => {
-            if (event.key === 'Escape') {
-                setOpen(false);
-            }
-        };
-
-        if (isOpen) {
-            document.addEventListener('mousedown', handleClickOutside);
-            document.addEventListener('keydown', handleEscape);
-        }
-
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
-            document.removeEventListener('keydown', handleEscape);
-        };
-    }, [isOpen, setOpen]);
-
-    return (
-        <div id="Navbar" className='flex md:hidden items-center justify-end w-full h-full relative' ref={menuRef}>
-            <Hamburger
-                id="hamburger menu"
-                toggled={isOpen}
-                toggle={setOpen}
-                color='white'
-                aria-label={isOpen ? 'Close menu' : 'Open menu'}
-                aria-expanded={isOpen}
-                role="button"
-            />
-
-            {/* Dropdown menu */}
-            <div className={`absolute top-full right-0 transition-all duration-300 ease-in-out ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
-                <ul
-                    role="menu"
-                    className='w-64 bg-[#2C2F36] p-4 rounded-lg shadow-lg flex flex-col space-y-4 z-50 mt-2'
-                >
-                    {[
-                        { label: 'Home', href: '/' },
-                        { label: 'Webpages', href: '/webpages' },
-                        { label: 'Projects', href: '#Projects' },
-                        { label: 'Skills', href: '#Skills' },
-                        { label: 'Education', href: '#Education' },
-                        { label: 'Contact', href: '#Contact' },
-                    ].map((item) => (
-                        <li key={item.label} role="none">
-                            <a
-                                role="menuitem"
-                                href={item.href}
-                                className="block px-4 py-2 text-white hover:bg-[#3B3F48] rounded-md transition-colors"
-                                onClick={() => setOpen(false)}
-                                tabIndex={isOpen ? 0 : -1}
-                            >
-                                {item.label}
-                            </a>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        </div>
-    );
-}
 
 export default function Navbar() {
-    const [isOpen, setOpen] = useState(false);
+
+    const [isOpen, setIsOpen] = useState(false);
     return (
+        <div>
         <nav className="relative top-0 w-full bg-[#2C2F36] h-[6rem] p-4 z-50">
             <div className='flex items-center justify-between h-full max-w-7xl mx-auto'>
                 <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold text-white tracking-wide'>
@@ -90,19 +22,69 @@ export default function Navbar() {
                 <ul className="flex items-center justify-end h-full space-x-4 md:space-x-8 lg:space-x-16 xl:space-x-20">
                     {/* Desktop Menu */}
                     <div className='hidden md:flex items-center justify-center h-full space-x-4 md:space-x-8 lg:space-x-16 xl:space-x-20'>
-                        <li><a className={aStyle} href="/"><span className={spanStyle}>Home</span></a></li>
-                        <li><a className={aStyle} href="/webpages"><span className={spanStyle}>Webpages</span></a></li>
-                        <li><a className={aStyle} href="#Projects"><span className={spanStyle}>Projects</span></a></li>
-                        <li><a className={aStyle} href="#Skills"><span className={spanStyle}>Skills</span></a></li>
-                        <li><a className={aStyle} href="#Education"><span className={spanStyle}>Education</span></a></li>
-                        <li><a className={aStyle} href="#Contact"><span className={spanStyle}>Contact</span></a></li>
+                        <li><Link className={aStyle} href="/">Home</Link></li>
+                        <li><a className={aStyle} href="/webpages">Webpages</a></li>
+                        <li><a className={aStyle} href="#Projects">Projects</a></li>
+                        <li><a className={aStyle} href="#Skills">Skills</a></li>
+                        <li><a className={aStyle} href="#Education">Education</a></li>
+                        <li><a className={aStyle} href="#Contact">Contact</a></li>
 
                     </div>
+                    {/* Hamburger button */}
 
-                    {/* Hamburger Menu */}
-                    <HamburgerMenu isOpen={isOpen} setOpen={setOpen} />
+                    <button 
+                        className="md:hidden absolute right-4 top-4 focus:outline-none p-2"
+                        onClick={() => setIsOpen(!isOpen)}
+                    >
+                        <div className="w-8 h-8 flex flex-col justify-center items-center">
+                            <span className="block w-7 h-0.5 bg-[#F5F5DC] mb-1.5"></span>
+                            <span className="block w-7 h-0.5 bg-[#F5F5DC] mb-1.5"></span>
+                            <span className="block w-7 h-0.5 bg-[#F5F5DC]"></span>
+                        </div>
+                    </button>
+                    {/* Hamburger Menu */} 
                 </ul>
             </div>
         </nav>
+
+{/* Mobile Menu Overlay */}
+            <div 
+                className={`md:hidden fixed inset-0 z-40 transition-opacity duration-800 ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+                onClick={() => setIsOpen(false)}
+            />
+
+            {/* Mobile Menu Sidebar */}
+            <div className={`md:hidden fixed top-0 right-0 h-full w-[100%] bg-[#9CA3AF] shadow-2xl z-[55] transition-transform duration-500 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+                {/* Close Button */}
+                <button 
+                    className="absolute top-6 right-6 p-2 focus:outline-none group"
+                    onClick={() => setIsOpen(false)}
+                    aria-label="Zapri meni"
+                >
+                    <svg 
+                        className="w-8 h-8 text-[#2C2F36] transition-transform duration-300 group-hover:scale-110" 
+                        fill="none" 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        strokeWidth="2.5" 
+                        viewBox="0 0 24 24" 
+                        stroke="currentColor"
+                    >
+                        <path d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                
+                <div className="flex flex-col items-center justify-center h-full">
+                    <ul className="flex flex-col items-center space-y-8">
+                        <li><Link className={aPhoneStyle} href="/">Home</Link></li>
+                        <li><a className={aPhoneStyle} href="/webpages">Webpages</a></li>
+                        <li><a className={aPhoneStyle} href="#Projects">Projects</a></li>
+                        <li><a className={aPhoneStyle} href="#Skills">Skills</a></li>
+                        <li><a className={aPhoneStyle} href="#Education">Education</a></li>
+                        <li><a className={aPhoneStyle} href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     );
 }

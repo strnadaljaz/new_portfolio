@@ -136,11 +136,6 @@ export default function Contact() {
   </svg>
 </a>
     
-
-
-
-
-
                                          </div>
                                     </div>
                                 </div>
@@ -224,7 +219,7 @@ export default function Contact() {
                                         </svg>
                                     </div>
                                     <h3 className="text-2xl font-bold text-white mb-2">Thank You!</h3>
-                                    <p className="text-gray-300">Your message has been sent successfully. I'll get back to you as soon as possible.</p>
+                                    <p className="text-gray-300">Your message has been sent successfully. I&apos;ll get back to you as soon as possible.</p>
                                     <button
                                         onClick={() => setIsSubmitted(false)}
                                         className="mt-6 text-[#FFD700] hover:text-yellow-400 transition-colors"
