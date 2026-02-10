@@ -24,11 +24,11 @@ export default function Navbar() {
                     <div className='hidden md:flex items-center justify-center h-full space-x-4 md:space-x-8 lg:space-x-16 xl:space-x-20'>
                         <li><Link className={aStyle} href="/">Home</Link></li>
                         <li><a className={aStyle} href="/webpages">Webpages</a></li>
+                        <li><a className={aStyle} href="#Contact">Contact</a></li>
                         <li><a className={aStyle} href="#Projects">Projects</a></li>
                         <li><a className={aStyle} href="#Skills">Skills</a></li>
                         <li><a className={aStyle} href="#Education">Education</a></li>
-                        <li><a className={aStyle} href="#Contact">Contact</a></li>
-
+                        
                     </div>
                     {/* Hamburger button */}
 
