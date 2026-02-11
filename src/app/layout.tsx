@@ -17,12 +17,22 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Aljaž Strnad",
-  description: "Aljaž Strnad's personal website",
+  description: "I specialise in building moder custom webpages for a friendly price.",
   keywords: [
     "Aljaž Strnad",
+    "aljaz",
+    "strnad",
+    "aljaz strnad",
+    "Aljaž",
+    "Strnad",
     "Portfolio",
     "Web Developer",
     "Software Engineer",
+    "Izdelava spletnih strani",
+    "spletne strani",
+    "splet",
+    "strani",
+    "webpages",
   ],
 };
 
