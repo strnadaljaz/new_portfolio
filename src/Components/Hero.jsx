@@ -104,15 +104,7 @@ function HeroContent() {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                             </svg>
                         </a>
-                    </button>
-                    <button className={`${cvButtonStyle} min-w-[180px] sm:min-w-[200px]`}>
-                        <a href="/cv.pdf" download="Aljaž_Strnad_CV" className="relative z-10 flex items-center justify-center">
-                            <span>Download CV</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 transform transition-transform group-hover:translate-y-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                            </svg>
-                        </a>
-                    </button>
+                    </button> 
                 </div>
             </motion.div>
         </div>

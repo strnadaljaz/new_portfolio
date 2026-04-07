@@ -25,17 +25,17 @@ export default function Skills() {
             ]
         },
         {
-            category: "Tools",
-            technologies: [
-                { name: "Git", icon: "/icons/git.svg" },
-                { name: "GitHub", icon: "/icons/github.svg" },
-            ]
-        },
-        {
             category: "Game Development",
             technologies: [
                 { name: "C++", icon: "/icons/c++.svg" },
                 { name: "Raylib", icon: "/icons/raylib.svg" },
+            ]
+        },
+        {
+            category: "Tools",
+            technologies: [
+                { name: "Git", icon: "/icons/git.svg" },
+                { name: "GitHub", icon: "/icons/github.svg" },
             ]
         }
     ];
