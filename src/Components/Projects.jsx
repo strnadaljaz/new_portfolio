@@ -5,10 +5,10 @@ import { fadeInUp, fadeInLeft } from "../utils/motion";
 export default function Projects() {
     // Project data
     const projects = [
+        { title: "International Space Station tracker", image: "iss_tracker.webp", description: "Build a tracker for ISS with actual hardware", link: "https://github.com/strnadaljaz/ISS_tracker"},
         { title: "Kokovit webpage", image: "kokovit.webp", description: "Built a webpage for a local business Kokovit.", link: "https://www.kokovit.si" },
         { title: "Spotimanager", image: "spotimanager.webp", description: "Spotimanager is an online full stack app for managing your Spotify playlists. Frontend made in Next.js with TypeScript, backend runs on Node.js", link: "https://github.com/strnadaljaz/spotify-playlist-manager" },
         { title: "Raylib 3D solar system", image: "threed-raylib.webp", description: "Some 3D Solar System with Raylib. Written in my free time.", link: "https://github.com/strnadaljaz/threed-raylib" },
-        { title: "Raylib Dino Dash", image: "dino.webp", description: "A 2D game writen in C++ with raylib graphics", link: "https://github.com/strnadaljaz/RaylibDinoDash" },
         { title: "Sokoban Standalone", image: "sokoban.webp", description: "A 2D game writen in C++ with raylib graphics, featuring a classic puzzle gameplay", link: "https://github.com/strnadaljaz/SokobanStandalone" },
         { title: "TaskFall", image: "taskfall.webp", description: "TaskFall is an online to-do app, made for my graduation thesis, made in php", link: "https://github.com/strnadaljaz/TaskFall" },
 

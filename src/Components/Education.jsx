@@ -12,7 +12,7 @@ export default function Education () {
             logo: "/icons/sers.webp", 
         },
         {
-            degree: "Computer Engineering",
+            degree: "Computer Science",
             institution: "Faculty of Electrical Engineering, Computer Science and Informatics",
             duration: "2025 - Present",
             description: "",
