@@ -24,7 +24,7 @@ export default function Projects() {
             <motion.div
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.1 }}
                 variants={fadeInUp}
                 className="flex flex-wrap justify-center items-center gap-8 max-w-6xl mx-auto px-4 md:px-6"
             >

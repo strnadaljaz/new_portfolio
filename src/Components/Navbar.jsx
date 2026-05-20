@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Hamburger from 'hamburger-react';
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 // Style consts
 const aStyle = "font-popins font-medium text-lg group text-[#C9CCCA] transition-all duration-300 ease-in-out hover:text-[#ffffff]";
@@ -16,9 +17,10 @@ export default function Navbar() {
         <div>
         <nav className="relative top-0 w-full bg-[#2C2F36] h-[6rem] p-4 z-50">
             <div className='flex items-center justify-between h-full max-w-7xl mx-auto'>
-                <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold text-white tracking-wide'>
+                <Image src="/logo.webp" width={130} height={130} alt='Logo'/>
+                {/*<h1 className='text-2xl md:text-3xl lg:text-4xl font-bold text-white tracking-wide'>
                     Aljaž Strnad
-                </h1>
+                </h1>*/}
                 <ul className="flex items-center justify-end h-full space-x-4 md:space-x-8 lg:space-x-16 xl:space-x-20">
                     {/* Desktop Menu */}
                     <div className='hidden md:flex items-center justify-center h-full space-x-4 md:space-x-8 lg:space-x-16 xl:space-x-20'>
