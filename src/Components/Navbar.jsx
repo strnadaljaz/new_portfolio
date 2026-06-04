@@ -9,6 +9,15 @@ import Image from 'next/image';
 const aStyle = "font-popins font-medium text-lg group text-[#C9CCCA] transition-all duration-300 ease-in-out hover:text-[#ffffff]";
 const aPhoneStyle = "text-[#2C2F36] text-2xl";
 
+export const downloadCV = () => {
+
+    const file = "/AljazStrnadCVslo.pdf";
+    
+    const a = document.createElement("a");
+    a.href = file;
+    a.download = file.split("/").pop();
+    a.click();
+};
 
 export default function Navbar() {
 
@@ -26,11 +35,11 @@ export default function Navbar() {
                     <div className='hidden md:flex items-center justify-center h-full space-x-4 md:space-x-8 lg:space-x-16 xl:space-x-20'>
                         <li><Link className={aStyle} href="/">Home</Link></li>
                         <li><a className={aStyle} href="/webpages">Webpages</a></li>
-                        <li><a className={aStyle} href="#Contact">Contact</a></li>
-                        <li><a className={aStyle} href="#Projects">Projects</a></li>
-                        <li><a className={aStyle} href="#Skills">Skills</a></li>
-                        <li><a className={aStyle} href="#Education">Education</a></li>
-                        
+                        <li><a className={aStyle} href="/#Contact">Contact</a></li>
+                        <li><a className={aStyle} href="/#Projects">Projects</a></li>
+                        {/* <li><a className={aStyle} href="#Skills">Skills</a></li> */}
+                        {/* <li><a className={aStyle} href="#Education">Education</a></li> */}
+                        <li><a className={aStyle} onClick={downloadCV} href='#'>CV</a></li>
                     </div>
                     {/* Hamburger button */}
 
@@ -80,10 +89,11 @@ export default function Navbar() {
                     <ul className="flex flex-col items-center space-y-8">
                         <li><Link className={aPhoneStyle} href="/">Home</Link></li>
                         <li><a className={aPhoneStyle} href="/webpages">Webpages</a></li>
-                        <li><a className={aPhoneStyle} href="#Projects">Projects</a></li>
-                        <li><a className={aPhoneStyle} href="#Skills">Skills</a></li>
-                        <li><a className={aPhoneStyle} href="#Education">Education</a></li>
                         <li><a className={aPhoneStyle} href="#Contact">Contact</a></li>
+                        <li><a className={aPhoneStyle} href="#Projects">Projects</a></li>
+                        <li><a className={aPhoneStyle} href="#" onClick={downloadCV}>CV</a></li>
+                        {/* <li><a className={aPhoneStyle} href="#Skills">Skills</a></li> */}
+                        {/* <li><a className={aPhoneStyle} href="#Education">Education</a></li> */}
                     </ul>
                 </div>
             </div>

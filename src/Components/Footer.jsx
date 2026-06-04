@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { fadeInUp } from "../utils/motion";
 import Link from "next/link";
+import { downloadCV } from "./Navbar";
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -26,12 +27,13 @@ export default function Footer() {
                     <div className="text-center">
                         <h3 className="text-lg font-semibold text-white mb-3">Quick Links</h3>
                         <ul className="space-y-2">
-                            <li><Link href="/" className="text-gray-399 hover:text-[#FFD700] transition-colors">Home</Link></li>
+                            <li><Link href="/" className="text-gray-400 hover:text-[#FFD700] transition-colors">Home</Link></li>
                             <li><a href="/webpages" className="text-gray-400 hover:text-[#FFD700] transition-colors">Webpages</a></li> 
                             <li><a href="#Contact" className="text-gray-400 hover:text-[#FFD700] transition-colors">Contact</a></li>
-                            <li><a href="#Education" className="text-gray-400 hover:text-[#FFD700] transition-colors">Education</a></li>
-                            <li><a href="#Skills" className="text-gray-400 hover:text-[#FFD700] transition-colors">Skills</a></li>
+                            {/* <li><a href="#Education" className="text-gray-400 hover:text-[#FFD700] transition-colors">Education</a></li>
+                            <li><a href="#Skills" className="text-gray-400 hover:text-[#FFD700] transition-colors">Skills</a></li> */}
                             <li><a href="#Projects" className="text-gray-400 hover:text-[#FFD700] transition-colors">Projects</a></li>
+                            <li><a href="#" className="text-gray-400 hover:text-[#FFD700] transition-colors" onClick={downloadCV}>CV</a></li>
                         </ul>
                     </div>
 
