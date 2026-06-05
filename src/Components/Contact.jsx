@@ -2,8 +2,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../utils/motion";
-import { getFirestore, collection, addDoc, serverTimestamp } from "firebase/firestore";
-import { app } from "../firebase/config";
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -29,18 +27,22 @@ export default function Contact() {
         setError("");
 
         try {
-            const db = getFirestore(app);
-            await addDoc(collection(db, "messages"), {
-                name: formData.name,
-                email: formData.email,
-                message: formData.message,
-                createdAt: serverTimestamp()
+            const response = await fetch("/api/send-email", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
             });
+            
+            if (!response.ok) {
+                throw new Error("Failed to send a message");
+            }
 
             setIsSubmitted(true);
             setFormData({ name: "", email: "", message: "" });
         } catch (err) {
-            console.error("Error submitting form:", err);
+            console.error(err);
             setError("Something went wrong. Please try again later.");
         } finally {
             setIsSubmitting(false);
@@ -222,7 +224,7 @@ export default function Contact() {
                                     <p className="text-gray-300">Your message has been sent successfully. I&apos;ll get back to you as soon as possible.</p>
                                     <button
                                         onClick={() => setIsSubmitted(false)}
-                                        className="mt-6 text-[#FFD700] hover:text-yellow-400 transition-colors"
+                                        className="mt-6 text-[#FFD700] hover:text-yellow-400 transition-colors cursor-pointer"
                                     >
                                         Send another message
                                     </button>
