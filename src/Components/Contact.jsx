@@ -8,6 +8,7 @@ export default function Contact() {
         name: "",
         email: "",
         message: "",
+        website: "",
     });
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -133,10 +134,10 @@ export default function Contact() {
                                 </svg>
                             </a>
                             <a href="https://instagram.com/strnadaljaz" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#FFD700] transition-colors">
-  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.25.75a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-  </svg>
-</a>
+                                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.25.75a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                </svg>
+                            </a>
     
                                          </div>
                                     </div>
@@ -168,6 +169,16 @@ export default function Contact() {
                                                 required
                                                 className="w-full px-4 py-3 rounded-lg bg-[#2C2F36] border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-[#FFD700]/50 focus:border-transparent"
                                                 placeholder="Your name"
+                                            />
+                                            {/* this input is just for bot detection */}
+                                            <input
+                                                type="text"
+                                                id="website"
+                                                name="website"
+                                                value={formData.website}
+                                                onChange={handleChange}
+                                                style={{ display: "none" }}
+                                                autoComplete="off"
                                             />
                                         </div>
                                         <div>

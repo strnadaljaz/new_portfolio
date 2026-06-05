@@ -1,7 +1,11 @@
 import nodemailer from "nodemailer";
 
 export async function POST(req: Request) {
-    const { name, email, message } = await req.json();
+    const { name, email, message, website } = await req.json();
+
+    if (website) {
+        return Response.json({ success: true }); // silently ignore bots
+    }
 
     const transporter = nodemailer.createTransport({
         service: "gmail",
