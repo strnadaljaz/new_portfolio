@@ -1,9 +1,9 @@
 "use client";
 import { useState } from 'react';
-import Hamburger from 'hamburger-react';
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import links from 'Links'
 
 // Style consts
 const aStyle = "font-popins font-medium text-lg group text-[#C9CCCA] transition-all duration-300 ease-in-out hover:text-[#ffffff]";
@@ -35,8 +35,8 @@ export default function Navbar() {
                     <div className='hidden md:flex items-center justify-center h-full space-x-4 md:space-x-8 lg:space-x-16 xl:space-x-20'>
                         <li><Link className={aStyle} href="/">Home</Link></li>
                         <li><a className={aStyle} href="/webpages">Webpages</a></li>
-                        <li><a className={aStyle} href="/#Contact">Contact</a></li>
-                        <li><a className={aStyle} href="/#Projects">Projects</a></li>
+                        <li><Link className={aStyle} href="/#Contact">Contact</Link></li>
+                        <li><Link className={aStyle} href="/#Projects">Projects</Link></li>
                         {/* <li><a className={aStyle} href="#Skills">Skills</a></li> */}
                         {/* <li><a className={aStyle} href="#Education">Education</a></li> */}
                         <li><a className={aStyle} onClick={downloadCV} href='#'>CV</a></li>
