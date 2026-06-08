@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import links from 'Links'
 
 // Style consts
 const aStyle = "font-popins font-medium text-lg group text-[#C9CCCA] transition-all duration-300 ease-in-out hover:text-[#ffffff]";
