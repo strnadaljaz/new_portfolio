@@ -23,7 +23,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <div>
-        <nav className="relative top-0 w-full bg-[#2C2F36] h-[6rem] p-4 z-50">
+        <nav className="relative top-0 w-full h-[6rem] p-4 z-50">
             <div className='flex items-center justify-between h-full max-w-7xl mx-auto'>
                 <Image src="/logo.webp" width={130} height={130} alt='Logo'/>
                 {/*<h1 className='text-2xl md:text-3xl lg:text-4xl font-bold text-white tracking-wide'>

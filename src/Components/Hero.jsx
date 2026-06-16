@@ -73,7 +73,7 @@ function HeroContent() {
                 variants={fadeInLeft}
                 className="flex justify-center items-center w-full md:w-1/2"
             >
-                <img src="/profile_ai.webp" alt="Profile picture" className="w-[35vh] h-[35vh] md:w-[40vh] md:h-[40vh] lg:w-[45vh] lg:h-[45vh] rounded-full object-cover shadow-xl transform transition-transform duration-500 hover:scale-105" />
+                <img src="/profile_ai.webp" alt="Profile picture" className="glow w-[35vh] h-[35vh] md:w-[40vh] md:h-[40vh] lg:w-[45vh] lg:h-[45vh] rounded-full object-cover shadow-xl transform transition-all duration-500 hover:scale-105" />
             </motion.div>
             <motion.div
                 initial="hidden"
@@ -113,7 +113,7 @@ function HeroContent() {
 
 export default function Hero() {
     return (
-        <div id="Home" className="relative bg-[#2C2F36] min-h-[calc(100vh-6rem)] flex items-center">
+        <div id="Home" className="relative min-h-[calc(100vh-6rem)] flex items-center">
             <HeroContent />
         </div>
     );

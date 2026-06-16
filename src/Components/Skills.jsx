@@ -50,7 +50,7 @@ export default function Skills() {
     };
 
     return (
-        <div id="Skills" className="bg-[#2C2F36] min-h-[70vh] py-16">
+        <div id="Skills" className="min-h-[70vh] py-16">
             <motion.div
                 initial="hidden"
                 whileInView="visible"
