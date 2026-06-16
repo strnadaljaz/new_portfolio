@@ -9,7 +9,7 @@ import Starfield from "../Components/Starfield"
 
 export default function Page() {
     return (
-        <div className="bg-[#2C2F36] ">
+        <div className="bg-[#2C2F36]">
             <Starfield 
                 starCount={1000}
                 starColor={[255, 255, 255]}
