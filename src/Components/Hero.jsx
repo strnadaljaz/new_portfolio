@@ -113,7 +113,7 @@ function HeroContent() {
 
 export default function Hero() {
     return (
-        <div id="Home" className="relative bg-[#2C2F36] min-h-[calc(100vh-6rem)] flex items-center">
+        <div id="Home" className="relative min-h-[calc(100vh-6rem)] flex items-center">
             <HeroContent />
         </div>
     );

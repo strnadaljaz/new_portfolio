@@ -21,7 +21,7 @@ export default function Education () {
     ];
 
     return (
-        <div id="Education" className="bg-[#2C2F36] min-h-[70vh] py-16">
+        <div id="Education" className="min-h-[70vh] py-16">
             <motion.div
                 initial="hidden"
                 whileInView="visible"

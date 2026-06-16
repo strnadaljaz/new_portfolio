@@ -51,7 +51,7 @@ export default function Contact() {
     };
 
     return (
-        <div id="Contact" className="bg-[#2C2F36] py-16">
+        <div id="Contact" className="py-16">
             <div className="max-w-6xl mx-auto px-4">
                 <motion.div
                     initial="hidden"
@@ -116,7 +116,7 @@ export default function Contact() {
                                         </svg>
                                     </div>
                                     <div>
-                                        <h3 className="text-white font-medium text-lg">Let's Connect</h3>
+                                        <h3 className="text-white font-medium text-lg">Let&apos;s Connect</h3>
                                         <div className="flex space-x-3 mt-2">
                              <a href="https://github.com/strnadaljaz" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#FFD700] transition-colors">
                                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
