@@ -2,21 +2,21 @@
 import { motion } from "framer-motion";
 import { fadeInUp } from "../utils/motion";
 
-export default function Education () {
+export default function Education() {
     const educationData = [
-        {
-            degree: "Computer Technician",
-            institution: "Secondary Electrical and Computer School Maribor",
-            duration: "2021 - 2025",
-            description: "Specialized in computer science with focus on programming, web development, and network administration. Gained strong foundations in HTML/CSS, JavaScript, and C++. Completed graduation thesis project 'TaskFall' - an online task management application.",
-            logo: "/icons/sers.webp", 
-        },
         {
             degree: "Computer Science",
             institution: "Faculty of Electrical Engineering, Computer Science and Informatics",
             duration: "2025 - Present",
             description: "",
             logo: "/icons/feri.webp",
+        },
+        {
+            degree: "Computer Technician",
+            institution: "Secondary Electrical and Computer School Maribor",
+            duration: "2021 - 2025",
+            description: "",
+            logo: "/icons/sers.webp",
         },
     ];
 
@@ -53,9 +53,9 @@ export default function Education () {
                         >
                             <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
                                 <div className="bg-[#BABDC4] rounded-full p-4 w-24 h-24 flex items-center justify-center flex-shrink-0 mx-auto md:mx-0">
-                                    <img 
-                                        src={item.logo} 
-                                        alt={`${item.institution} logo`} 
+                                    <img
+                                        src={item.logo}
+                                        alt={`${item.institution} logo`}
                                         className="w-full h-full object-contain"
                                     />
                                 </div>
