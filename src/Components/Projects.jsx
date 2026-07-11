@@ -5,11 +5,11 @@ import { fadeInUp, fadeInLeft } from "../utils/motion";
 export default function Projects() {
     // Project data
     const projects = [
+        { title: "World cup match winner predictor", image: "match_predictor.webp", description: "Worked on machine learning to predict the winner of a match between two nations.", link: "https://international-match-predictor.vercel.app/" },
         { title: "International Space Station tracker", image: "iss_tracker.webp", description: "Build a tracker for ISS with actual hardware", link: "https://github.com/strnadaljaz/ISS_tracker"},
         { title: "Kokovit webpage", image: "kokovit.webp", description: "Built a webpage for a local business Kokovit.", link: "https://www.kokovit.si" },
         { title: "Spotimanager", image: "spotimanager.webp", description: "Spotimanager is an online full stack app for managing your Spotify playlists. Frontend made in Next.js with TypeScript, backend runs on Node.js", link: "https://github.com/strnadaljaz/spotify-playlist-manager" },
-        { title: "Raylib 3D solar system", image: "threed-raylib.webp", description: "Some 3D Solar System with Raylib. Written in my free time.", link: "https://github.com/strnadaljaz/threed-raylib" },
-        { title: "World cup match winner predictor", image: "match_predictor.webp", description: "Worked on machine learning to predict the winner of a match between two nations.", link: "https://github.com/strnadaljaz/world_cup_match_predictor" },
+        { title: "Raylib 3D solar system", image: "threed-raylib.webp", description: "Some 3D Solar System with Raylib. Written in my free time.", link: "https://github.com/strnadaljaz/threed-raylib" }, 
         { title: "TaskFall", image: "taskfall.webp", description: "TaskFall is an online to-do app, made for my graduation thesis, made in php", link: "https://github.com/strnadaljaz/TaskFall" },
 
     ];
