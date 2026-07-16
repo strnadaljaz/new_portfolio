@@ -10,7 +10,7 @@ const aPhoneStyle = "text-[#2C2F36] text-2xl";
 
 export const downloadCV = () => {
 
-    const file = "/AljazStrnadCVslo.pdf";
+    const file = "/AljazStrnadCVeng.pdf";
     
     const a = document.createElement("a");
     a.href = file;
