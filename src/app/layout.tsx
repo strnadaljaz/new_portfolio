@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Aljaž Strnad",
-  description: "I specialise in building moder custom webpages for a friendly price.",
+  description: "Software engineer, Computer Science student and much more!",
   keywords: [
     "Aljaž Strnad",
     "aljaz",
@@ -42,28 +42,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <Script
-          id="facebook-pixel"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              !function(f,b,e,v,n,t,s)
-              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-              n.queue=[];t=b.createElement(e);t.async=!0;
-              t.src=v;s=b.getElementsByTagName(e)[0];
-              s.parentNode.insertBefore(t,s)}(window, document,'script',
-              'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '796968726020166');
-              fbq('track', 'PageView');
-            `,
-          }}
-        />
-      </head>
-        <body
+    <html lang="en"> 
+      <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}

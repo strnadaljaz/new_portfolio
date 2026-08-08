@@ -5,17 +5,17 @@ import { fadeInUp } from "../utils/motion";
 export default function Education() {
     const educationData = [
         {
-            degree: "Computer Science",
+            degree: "Bachelors in Computer Science",
             institution: "Faculty of Electrical Engineering, Computer Science and Informatics",
             duration: "2025 - Present",
-            description: "",
+            description: "Currently going into my second year. Focusing on ML/Data engineering, server managment and working on my personal projects.",
             logo: "/icons/feri.webp",
         },
         {
             degree: "Computer Technician",
             institution: "Secondary Electrical and Computer School Maribor",
             duration: "2021 - 2025",
-            description: "",
+            description: "Got foundamentials in C++ programming and web programming with HTML, CSS and PHP",
             logo: "/icons/sers.webp",
         },
     ];

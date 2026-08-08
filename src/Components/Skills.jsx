@@ -18,6 +18,7 @@ export default function Skills() {
         {
             category: "Backend",
             technologies: [
+                { name: "Python", icon: "/icons/python.svg" },
                 { name: "Node.js", icon: "/icons/nodejs.svg" },
                 { name: "PHP", icon: "/icons/php.webp" },
                 { name: "MySQL", icon: "/icons/mysql.svg" },
@@ -28,6 +29,7 @@ export default function Skills() {
             category: "Game Development",
             technologies: [
                 { name: "C++", icon: "/icons/c++.svg" },
+                { name: "C", icon: "/icons/c.svg" },
                 { name: "Raylib", icon: "/icons/raylib.svg" },
             ]
         },
@@ -35,7 +37,8 @@ export default function Skills() {
             category: "Tools",
             technologies: [
                 { name: "Git", icon: "/icons/git.svg" },
-                { name: "GitHub", icon: "/icons/github.svg" },
+                { name: "Docker", icon: "/icons/docker.svg" },
+                { name: "Linux", icon: "/icons/linux.svg" },
             ]
         }
     ];
