@@ -8,16 +8,6 @@ import Image from 'next/image';
 const aStyle = "font-popins font-medium text-lg group text-[#C9CCCA] transition-all duration-300 ease-in-out hover:text-[#ffffff]";
 const aPhoneStyle = "text-[#2C2F36] text-2xl";
 
-export const downloadCV = () => {
-
-    const file = "/AljazStrnadCVeng.pdf";
-    
-    const a = document.createElement("a");
-    a.href = file;
-    a.download = file.split("/").pop();
-    a.click();
-};
-
 export default function Navbar() {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +28,7 @@ export default function Navbar() {
                         <li><Link className={aStyle} href="/#Projects">Projects</Link></li>
                         {/* <li><a className={aStyle} href="#Skills">Skills</a></li> */}
                         {/* <li><a className={aStyle} href="#Education">Education</a></li> */}
-                        <li><a className={aStyle} onClick={downloadCV} href='#'>CV</a></li>
+                        <li><a className={aStyle} href='/AljazStrnadCVeng.pdf' target='_blank' rel='noopener noreferrer'>CV</a></li>
                     </div>
                     {/* Hamburger button */}
 
@@ -90,7 +80,7 @@ export default function Navbar() {
                         <li><a className={aPhoneStyle} href="/webpages">Webpages</a></li>
                         <li><a className={aPhoneStyle} href="#Contact">Contact</a></li>
                         <li><a className={aPhoneStyle} href="#Projects">Projects</a></li>
-                        <li><a className={aPhoneStyle} href="#" onClick={downloadCV}>CV</a></li>
+                        <li><a className={aPhoneStyle} href='/AljazStrnadCVeng.pdf' target='_blank' rel='noopener noreferrer'>CV</a></li>
                         {/* <li><a className={aPhoneStyle} href="#Skills">Skills</a></li> */}
                         {/* <li><a className={aPhoneStyle} href="#Education">Education</a></li> */}
                     </ul>

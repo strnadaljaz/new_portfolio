@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import { fadeInUp } from "../utils/motion";
 import Link from "next/link";
-import { downloadCV } from "./Navbar";
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -33,7 +32,7 @@ export default function Footer() {
                             {/* <li><a href="#Education" className="text-gray-400 hover:text-[#FFD700] transition-colors">Education</a></li>
                             <li><a href="#Skills" className="text-gray-400 hover:text-[#FFD700] transition-colors">Skills</a></li> */}
                             <li><a href="#Projects" className="text-gray-400 hover:text-[#FFD700] transition-colors">Projects</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-[#FFD700] transition-colors" onClick={downloadCV}>CV</a></li>
+                            <li><a className="text-gray-400 hover:text-[#FFD700] transition-colors" href='/AljazStrnadCVeng.pdf' target='_blank' rel='noopener noreferrer'>CV</a></li>
                         </ul>
                     </div>
 
